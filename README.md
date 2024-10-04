@@ -9,14 +9,14 @@ and then create .env file
 inside .env file add configuration to connect your local/deploy database and default port for this service.
 
 PORT=8081
-<!-- customize to your database configuration-->
+---customize to your database configuration---
 DB_HOST="localhost"
 DB_NAME="cms_test"
 DB_USER="rama"
 DB_PASS="xafdewrg"
 DB_PORT=5432
 
-<!-- Query add table users in postgres-->
+Query add table users in postgres
 CREATE TABLE users (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     first_name VARCHAR(20),
@@ -48,4 +48,4 @@ request json :
     "phone_number":"0832425334"
 }
 
-<!-- I haven't created a service to view user data so to see if it works look in your database. -->
+I haven't created a service to view user data so to see if it works look in your database.
